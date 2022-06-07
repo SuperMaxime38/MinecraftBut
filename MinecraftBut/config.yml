@@ -1,0 +1,25 @@
+## Minecraft But ##
+#   Config File   #
+
+game:
+  explosion:
+    enable: false
+    luck: 12 # the highest the luck is, lesser are the chance to summon a tnt when a player moves. Warning if luck < 2 summoning stone or gravel could be impossible.
+    rayon: 10 # rayon is caluclated like that : pos = random(rayon*2) - rayon
+    summon:
+      gravel: false
+      stone: false
+  sandrain:
+    enable: false
+    luck: 8
+    rayon: 50 # rayon is caluclated like that : pos = random(rayon*2) - rayon
+    harder: true
+    hardcore: false
+    playertarget: true
+  lavafloor:
+    enable: false
+    rayon: 10
+    luck: 10
+    
+# Plugin made by SuperMaxime38
+# Have fun :)

@@ -1,0 +1,9 @@
+name: MinecraftBut
+version: 1.0
+author: SuperMaxime38
+main: com.mxgames.Main
+commands:
+  mcbut:
+    description: commande principale
+    permission: mcbut
+    usage: Error
