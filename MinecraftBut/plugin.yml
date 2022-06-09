@@ -6,4 +6,4 @@ commands:
   mcbut:
     description: commande principale
     permission: mcbut
-    usage: Error
+    usage: you misused this command... (/mcbut)

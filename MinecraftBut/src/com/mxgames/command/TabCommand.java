@@ -19,7 +19,10 @@ public class TabCommand implements TabCompleter{
 				arg0.add("sandrain");
 				arg0.add("explosion");
 				arg0.add("lavafloor");
+				arg0.add("apocalypse");
+				arg0.add("rtp");
 				arg0.add("reload");
+				arg0.add("version");
 				
 				return arg0;
 			} else if(args.length == 2) {
@@ -29,14 +32,14 @@ public class TabCommand implements TabCompleter{
 				case "explosion" :
 					arg1.add("true");
 					arg1.add("false");
-					arg1.add("rayon");
+					arg1.add("radius");
 					arg1.add("luck");
-					arg1.add("summon");
+					//arg1.add("summon");
 				break;
 				case "sandrain" :
 					arg1.add("true");
 					arg1.add("false");
-					arg1.add("rayon");
+					arg1.add("radius");
 					arg1.add("luck");
 					arg1.add("harder");
 					arg1.add("hardcore");
@@ -45,7 +48,21 @@ public class TabCommand implements TabCompleter{
 				case "lavafloor" :
 					arg1.add("true");
 					arg1.add("false");
-					arg1.add("rayon");
+					arg1.add("radius");
+					arg1.add("luck");
+				break;
+				case "apocalypse" :
+					arg1.add("true");
+					arg1.add("false");
+					arg1.add("luck");
+				break;
+				case "rtp" :
+					arg1.add("onMove");
+					arg1.add("onCraft");
+					arg1.add("onUse");
+					arg1.add("onDrop");
+					arg1.add("maxX");
+					arg1.add("maxZ");
 					arg1.add("luck");
 				break;
 				}
@@ -63,6 +80,26 @@ public class TabCommand implements TabCompleter{
 						arg.add("gravel false");
 						arg.add("stone true");
 						arg.add("stone false");
+					break;
+					}
+				break;
+				case "rtp":
+					switch(args[1]) {
+					case "onMove" :
+						arg.add("true");
+						arg.add("false");
+					break;
+					case "onCraft" :
+						arg.add("true");
+						arg.add("false");
+					break;
+					case "onUse" :
+						arg.add("true");
+						arg.add("false");
+					break;
+					case "onDrop" :
+						arg.add("true");
+						arg.add("false");
 					break;
 					}
 				break;

@@ -7,10 +7,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
-import org.bukkit.inventory.ItemStack;
-
 import com.mxgames.Main;
 
 public class Explosion implements Listener {
@@ -71,13 +68,6 @@ public class Explosion implements Listener {
 			break;
 			}
 		}
-	}
-	
-	
-	public void onKill(PlayerDeathEvent event) {
-		Player killer = (Player) event.getEntity().getKiller();
-
-		killer.getInventory().addItem(new ItemStack(Material.GOLDEN_APPLE, 3));
 	}
 
 }
