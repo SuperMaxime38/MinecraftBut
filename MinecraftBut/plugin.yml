@@ -2,6 +2,7 @@ name: MinecraftBut
 version: 1.0
 author: SuperMaxime38
 main: com.mxgames.Main
+api-version: 1.13
 commands:
   mcbut:
     description: commande principale

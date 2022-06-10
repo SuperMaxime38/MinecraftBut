@@ -25,7 +25,7 @@ game:
     luck: 10
   apocalypse:
     enable: false
-    luck: 10
+    luck: 2000 #2000 is the minimum
   rtp:
     enable:
       onMove: false
