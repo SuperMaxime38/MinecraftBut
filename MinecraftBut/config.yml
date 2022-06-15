@@ -1,0 +1,46 @@
+## Minecraft But ##
+#   Config File   #
+
+##NOTA : RAYON MEANS RADIUS
+
+version: 0.9.2
+game:
+  explosion:
+    enable: false
+    luck: 12 # the highest the luck is, lesser are the chance to summon a tnt when a player moves. Warning if luck < 2 summoning stone or gravel could be impossible.
+    rayon: 10 # radius is caluclated like that : pos = random(radius*2) - rayon
+    summon: 
+      gravel: false #Deprecated
+      stone: false  #Deprecated
+  sandrain:
+    enable: false
+    luck: 8
+    rayon: 50 # radius is caluclated like that : pos = random(radius*2) - rayon
+    harder: true
+    hardcore: false
+    playertarget: true
+  lavafloor:
+    enable: false
+    rayon: 10
+    luck: 10
+  apocalypse:
+    enable: false
+    luck: 2000 #2000 is the minimum
+  rtp:
+    enable:
+      onMove: false
+      onCraft: false
+      onUse: false
+      onDrop: false
+      
+    maxX: 1000
+    maxZ: 1000
+    luck: 200
+  randomcraft:
+    enable: false
+  randommob:
+    enable: true
+    luck: 20
+    
+# Plugin made by SuperMaxime38
+# Have fun :)
