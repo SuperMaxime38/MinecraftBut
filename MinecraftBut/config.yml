@@ -1,46 +1,65 @@
 ## Minecraft But ##
 #   Config File   #
 
-##NOTA : RAYON MEANS RADIUS
+version: 0.9.4
 
-version: 0.9.2
 game:
   explosion:
     enable: false
     luck: 12 # the highest the luck is, lesser are the chance to summon a tnt when a player moves. Warning if luck < 2 summoning stone or gravel could be impossible.
-    rayon: 10 # radius is caluclated like that : pos = random(radius*2) - rayon
+    radius: 10 # radius is caluclated like that : pos = random(radius*2) - rayon
     summon: 
       gravel: false #Deprecated
       stone: false  #Deprecated
+      
   sandrain:
     enable: false
     luck: 8
-    rayon: 50 # radius is caluclated like that : pos = random(radius*2) - rayon
+    radius: 50 # radius is caluclated like that : pos = random(radius*2) - rayon
     harder: true
     hardcore: false
     playertarget: true
+    
   lavafloor:
     enable: false
-    rayon: 10
+    radius: 10
     luck: 10
   apocalypse:
     enable: false
     luck: 2000 #2000 is the minimum
+    
   rtp:
     enable:
       onMove: false
       onCraft: false
-      onUse: false
+      onUse: false # When a player is using an item or placing a block
       onDrop: false
       
     maxX: 1000
     maxZ: 1000
     luck: 200
+    
   randomcraft:
     enable: false
+    
   randommob:
-    enable: true
+    enable: false
     luck: 20
+    
+  structurecraft:
+    enable: false
+    
+  deathswap: #This feature isnt test with 2 player (im on a localhost server) if it doesnt work please warn me
+    enable: false
+    PLAYER01:  #Example SuperMaxime38
+    PLAYER02: 
+    time: 300 #time between a swap (in seconds) default is 5 minutes (300 seconds)
+    
+  fallingground:
+    enable: true
+    radius: 16
+    nether: false #Enable this event in the nether
+    ender: false  #Enable this event in the end
     
 # Plugin made by SuperMaxime38
 # Have fun :)

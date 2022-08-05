@@ -1,10 +1,13 @@
 name: MinecraftBut
-version: 1.0
+version: 0.9.3
 author: SuperMaxime38
 main: com.mxgames.Main
 api-version: 1.13
 commands:
   mcbut:
-    description: commande principale
-    permission: mcbut
+    description: Main command
+    permission: mcbut.use
     usage: you misssed this command... (/mcbut) or you're in the cmd
+  deathswap:
+    description: DeathSwap Event's command
+    permission: mcbut.deathswap.use
